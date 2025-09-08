@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anonymous</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+    <nav class="top-nav" aria-label="Main navigation">
+        <ul>
+            <li><a href="#intro" data-target="intro" class="nav-link active" aria-current="page">HOME</a></li>
+
+            <!-- Only this one has submenu -->
+            <li class="has-submenu">
+                <a href="#projects" data-target="projects" class="nav-link">PROJECTS</a>
+                <ul class="submenu">
+                    <li><a href="#projects-python" class="sub-link">Python</a></li>
+                    <li><a href="#projects-js" class="sub-link">JavaScript</a></li>
+                    <li><a href="#projects-other" class="sub-link">Other</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#about" data-target="about" class="nav-link">ABOUT</a></li>
+            <li><a href="#more" data-target="more" class="nav-link">MORE</a></li>
+        </ul>
+    </nav>
+
+    <main class="main">
+        <section id="intro" class="section active">
+            <div class="section-content">
+                <img src="./assets/logo.svg" alt="Logo" class="logo">
+                <h1 class="hero-title">Hi! I'm <span class="accent">Anonymous</span></h1>
+                <p class="hero-subtitle">Computer Engineering Senior Student</p>
+                <p class="hero-description">Working on this...</p>
+            </div>
+        </section>
+
+        <!-- Projects main -->
+        <section id="projects" class="section">
+            <div class="section-content">
+                <h2 class="hero-title">Projects</h2>
+                <p class="hero-description">Explore by category:</p>
+            </div>
+        </section>
+
+        <!-- Sub-projects -->
+        <section id="projects-python" class="section">
+            <div class="section-content">
+                <h2 class="hero-title">Python Projects</h2>
+                <p class="hero-description">Some cool stuff I coded in Python.</p>
+            </div>
+        </section>
+
+        <section id="projects-js" class="section">
+            <div class="section-content">
+                <h2 class="hero-title">JavaScript Projects</h2>
+                <p class="hero-description">Things I built with JS.</p>
+            </div>
+        </section>
+
+        <section id="projects-other" class="section">
+            <div class="section-content">
+                <h2 class="hero-title">Other Projects</h2>
+                <p class="hero-description">Miscellaneous projects go here.</p>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section">
+            <div class="section-content">
+                <h2 class="hero-title">About</h2>
+                <p class="hero-description">A short bio or resume highlights go here.</p>
+            </div>
+        </section>
+
+        <!-- More -->
+        <section id="more" class="section">
+            <div class="section-content">
+                <h2 class="hero-title">More</h2>
+                <p class="hero-description">Contact, links, blog, or other extra info.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
