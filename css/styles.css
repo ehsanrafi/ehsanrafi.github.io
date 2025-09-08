@@ -3,12 +3,12 @@
     --foreground: #ffffff;
     --card: #1a1a1a;
     --card-foreground: #b3b3b3;
-    --primary: #ff4081;
+    --primary: #00ff85;
     --primary-foreground: #ffffff;
     --secondary: #b3b3b3;
     --muted: #3a3a3a;
     --border: #333333;
-    --accent: #ff4081;
+    --accent: #00ff85;
     --radius: 0.5rem;
 }
 
@@ -61,6 +61,11 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 1200px;
     width: 100%;
     text-align: center;
+}
+
+.section-content img {
+    display: block;
+    margin: 2rem auto 3rem auto;
 }
 
 .hero-title {
