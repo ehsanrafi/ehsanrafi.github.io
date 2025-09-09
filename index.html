@@ -8,10 +8,26 @@
     </head>
 
     <body>
+        <nav class="top-nav">
+            <ul>
+                <li><a href="#intro" data-target="intro" class="nav-link">HOME</a></li>
+                <li class="has-submenu">
+                    <a href="#projects" data-target="projects" class="nav-link">PROJECTS</a>
+                    <ul class="submenu">
+                        <li><a href="#projects-python" class="sub-link">Python</a></li>
+                        <li><a href="#projects-javascript" class="sub-link">JavaScript</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about" data-target="about" class="nav-link">ABOUT</a></li>
+                <li><a href="#more" data-target="more" class="nav-link">MORE</a></li>
+
+            </ul>
+        </nav>
+
         <main class="main">
             <section id="intro" class="section active">
                 <div class="section-content">
-                    <img src="./assets/logo.svg" alt="Logo">
+                    <img src="./assets/logo.svg">
                     <h1 class="hero-title">Hi! I'm <span class="accent">Anonymous</span></h1>
                     <p class="hero-subtitle">Computer Engineering Senior Student</p>
                     <p class="hero-description">
