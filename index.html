@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Anonymous</title>
         <link rel="icon" href="./assets/logo.svg" type="image/svg+xml">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/styles.css">
 
         <!-- <meta name="author" content="Anonymous"/>
@@ -25,10 +28,10 @@
             <ul>
                 <li><a href="#intro" data-target="intro" class="nav-link">HOME</a></li>
                 <li class="has-submenu">
-                    <a href="#projects" data-target="projects" class="nav-link">PROJECTS</a>
+                    <a href="#python" data-target="projects" class="nav-link">PROJECTS</a>
                     <ul class="submenu">
-                        <li><a href="#projects-python" class="sub-link">Python</a></li>
-                        <li><a href="#projects-javascript" class="sub-link">JavaScript</a></li>
+                        <li><a href="#python" class="sub-link">Python</a></li>
+                        <li><a href="#javascript" class="sub-link">JavaScript</a></li>
                     </ul>
                 </li>
                 <li><a href="#about" data-target="about" class="nav-link">ABOUT</a></li>
@@ -48,7 +51,58 @@
                     </p>
                 </div>
             </section>
+
+            <section id="python" class="section">
+                <div class="section-content">
+                    <h2 class="hero-title">Python</h2>
+                    <p class="hero-description">Formula 1 Q&A Bot</p>
+                    <div>
+                        <a href="https://github.com/ehsanrafi" target="_blank">More</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="python" class="section">
+                <div class="section-content">
+                    <h2 class="hero-title">JavaScript</h2>
+                    <p class="hero-description">Tic Tac Toe</p>
+                    <div>
+                        <a href="https://github.com/ehsanrafi" target="_blank">More</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="section">
+                <div class="section-content">
+                    <h2 class="hero-title">About</h2>
+                    <p>
+                        I'm <b id="years"></b> years old.
+                    </p>
+                </div>
+            </section>
+
+            <section id="more" class="section">
+                <div class="section-content">
+                    <h2 class="hero-title">More</h2>
+                    <h3 class="hero-subtitle">Certificates</h3>
+                    <section class="myCV">
+                        <a href="./assets/logo.svg" target="_blank">My CV</a>
+                    </section>
+                </div>
+            </section>
         </main>
+
+        <footer>
+            <div class="container">
+                <p>
+                    <a href="https://mail.google.com/mail/?view=cm&to=anonymous@gmail.com" target="_blank"><img height="50px" src="./assets/email.svg"/></a>
+                    <a href="https://github.com/anonymous" target="_blank"><img height="50px" src="./assets/github.svg"/></a>
+                    <a href="https://linkedin.com/anonymous" target="_blank"><img height="50px" src="./assets/linkedin.svg"/></a>
+                </p>
+                <h4>&copy; <span id="current-year"></span> Anonymous. All rights reserved.</h4>
+            </div>
+        </footer>
+
         <script src="./js/script.js"></script>
     </body>
 </html>
