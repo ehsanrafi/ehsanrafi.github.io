@@ -28,7 +28,7 @@ body {
 }
 
 #intro {
-    padding-top: 4rem;
+    padding-top: 5rem;
 }
 
 .section {
@@ -52,6 +52,10 @@ body {
 
 .logo {
     display: block;
+}
+
+#intro .section-content img:hover {
+    transform: scale(1.2);
 }
 
 .hero-title {
@@ -145,20 +149,28 @@ body {
 }
 
 .container p a {
+    display: inline-block;
     padding: 0 0.75rem;
 }
 
+.container p a:hover img {
+    transform: scale(1.1);
+}
+
 .myCV > a {
+    display: inline-block;
     text-decoration: none;
     font-weight: 600;
     font-size: 1.5rem;
 	padding: 0.5rem 1rem;
 	color: var(--background);
 	background-color: rgba(255, 255, 255, 1);
-	transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+    transition: transform 0.3s ease;
+	/* transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out; */
 }
 
 .myCV > a:hover {
-	background-color: var(--background);
-	color: var(--foreground);
+	/* background-color: var(--background); */
+	/* color: var(--foreground); */
+    transform: scale(1.1);
 }
