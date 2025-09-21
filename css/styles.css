@@ -52,6 +52,7 @@ body {
 
 .logo {
     display: block;
+    transition: transform 0.5s ease;
 }
 
 #intro .section-content img:hover {
@@ -71,12 +72,14 @@ body {
 .hero-subtitle {
     font-size: clamp(1.25rem, 2.5vw, 1.5rem);
     color: var(--secondary);
+    margin-top: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
 .hero-description {
     font-size: clamp(1.25rem, 1.75vw, 0.75rem);
     color: var(--secondary);
+    /* margin-bottom: 1.5rem; */
 }
 
 .top-nav {
@@ -173,4 +176,21 @@ body {
 	/* background-color: var(--background); */
 	/* color: var(--foreground); */
     transform: scale(1.1);
+}
+
+.folder-img {
+	width: 13.5%;
+	height: auto;
+    padding: 0 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.folder-img:hover {
+    transform: scale(1.1);
+}
+
+.contact {
+    transition: transform 0.3s ease;
 }
