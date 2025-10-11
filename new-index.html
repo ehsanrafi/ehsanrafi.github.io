@@ -9,18 +9,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/styles.css">
-
-        <!-- <meta name="author" content="Anonymous"/>
-        <meta name="description" content="Anonymous Personal Portfolio" />
-        <meta name="keywords" content=""/>
-
-		<meta property="og:title" content="Anonymous Portfolio" />
-		<meta property="og:type" content="website" />
-		<meta property="og:image" content="" />
-		<meta property="og:url" content="" />
-		<meta property="og:description" content="Anonymous Portfolio" />
-		<meta property="og:locale" content="en_US" />
-		<meta property="og:site_name" content="Anonymous Portfolio" /> -->
     </head>
 
     <body>
@@ -36,7 +24,6 @@
                 </li>
                 <li><a href="#about" data-target="about" class="nav-link">ABOUT</a></li>
                 <li><a href="#more" data-target="more" class="nav-link">MORE</a></li>
-
             </ul>
         </nav>
 
@@ -57,7 +44,7 @@
                     <h2 class="hero-title">Python</h2>
                     <p class="hero-description">Formula 1 Q&A Bot</p>
                     <div>
-                        <a href="https://github.com/ehsanrafi" target="_blank" rel="noopener noreferrer">More</a>
+                        <a href="https://github.com/ehsanrafi" target="_blank">More</a>
                     </div>
                 </div>
             </section>
@@ -67,7 +54,7 @@
                     <h2 class="hero-title">JavaScript</h2>
                     <p class="hero-description">Tic Tac Toe</p>
                     <div>
-                        <a href="https://github.com/ehsanrafi" target="_blank" rel="noopener noreferrer">More</a>
+                        <a href="https://github.com/ehsanrafi" target="_blank">More</a>
                     </div>
                 </div>
             </section>
@@ -92,39 +79,41 @@
                         Here are some of the certificates I've earned over the years!
                     </p>
                     <section>
-                        <img src="./assets/certificates/thumbnails/ml.svg" class="folder-img">
-                        <img src="./assets/certificates/thumbnails/cybersecurity.svg" class="folder-img">
-                        <img src="./assets/certificates/thumbnails/python.svg" class="folder-img">
+                        <img src="./assets/certificates/thumbnails/ml.svg" class="folder-img cert-trigger">
+                        <img src="./assets/certificates/thumbnails/cybersecurity.svg" class="folder-img cert-trigger">
+                        <img src="./assets/certificates/thumbnails/python.svg" class="folder-img cert-trigger">
                     </section>
 
                     <section class="myCV">
-                        <a href="./assets/others/logo.svg" target="_blank" rel="noopener noreferrer">My CV</a>
+                        <a href="./assets/others/logo.svg" target="_blank">My CV</a>
                     </section>
                 </div>
             </section>
         </main>
 
-        <div id="cert-modal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h2>Machine Learning</h2>
-                <ul class="cert-list">
-                    <li data-cert="./assets/certificates/1.png">Cisco Cibersecurity</li>
-                    <li data-cert="./assets/certificates/2.png">IBM</li>
-                </ul>
-            </div>
-        </div>
-
         <footer>
             <div class="container">
                 <p>
-                    <a href="https://mail.google.com/mail/?view=cm&to=anonymous@gmail.com" target="_blank" rel="noopener noreferrer"><img height="50px" src="./assets/contact/email.svg" class="contact"/></a>
-                    <a href="https://github.com/anonymous" target="_blank" rel="noopener noreferrer"><img height="50px" src="./assets/contact/github.svg" class="contact"/></a>
-                    <a href="https://linkedin.com/anonymous" target="_blank" rel="noopener noreferrer"><img height="50px" src="./assets/contact/linkedin.svg" class="contact"/></a>
+                    <a href="https://mail.google.com/mail/?view=cm&to=anonymous@gmail.com" target="_blank"><img height="50px" src="./assets/contact/email.svg" class="contact"/></a>
+                    <a href="https://github.com/anonymous" target="_blank"><img height="50px" src="./assets/contact/github.svg" class="contact"/></a>
+                    <a href="https://linkedin.com/anonymous" target="_blank"><img height="50px" src="./assets/contact/linkedin.svg" class="contact"/></a>
                 </p>
                 <h4>&copy; <span id="current-year"></span> Anonymous. All rights reserved.</h4>
             </div>
         </footer>
+
+        <!-- Modal de Certificados -->
+        <div id="certModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Mis Certificados</h2>
+                <ul class="cert-list">
+                    <li data-cert="./assets/certificates/cert1.png">Machine Learning</li>
+                    <li data-cert="./assets/certificates/cert2.png">Cybersecurity</li>
+                    <li data-cert="./assets/certificates/cert3.png">Python</li>
+                </ul>
+            </div>
+        </div>
 
         <script src="./js/script.js"></script>
     </body>
