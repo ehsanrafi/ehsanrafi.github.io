@@ -66,8 +66,19 @@
                 <div class="section-content">
                     <h2 class="hero-title">JavaScript</h2>
                     <p class="hero-description">Tic Tac Toe</p>
+                    <br>
+                    <p> 
+                        This is my personal project where I built a simple interactive Tic-Tac-Toe desktop game using 
+                        <br>
+                        Electron, JavaScript, HTML, and CSS to practice game logic and cross-platform app development.
+                    </p>
+                    <br>
                     <div>
-                        <a href="https://github.com/ehsanrafi" target="_blank" rel="noopener noreferrer">More</a>
+                        <img src="./assets/others/tictactoe.png">
+                        <br><br>
+                        <section class="button">
+                            <a href="https://github.com/ehsanrafi/tictactoe" target="_blank" rel="noopener noreferrer">Github Repo</a>
+                        </section>
                     </div>
                 </div>
             </section>
@@ -84,36 +95,62 @@
             <section id="more" class="section">
                 <div class="section-content">
                     <h2 class="hero-title">More</h2>
-                    <p>
-                        If you want to get more info...
-                    </p>
                     <h3 class="hero-subtitle">Certificates</h3>
-                    <p>
+                    <h4>
                         Here are some of the certificates I've earned over the years!
-                    </p>
-                    <section>
-                        <img src="./assets/certificates/thumbnails/ml.svg" class="folder-img">
-                        <img src="./assets/certificates/thumbnails/cybersecurity.svg" class="folder-img">
-                        <img src="./assets/certificates/thumbnails/python.svg" class="folder-img">
+                    </h4>
+                    <section class="folders">
+                        <img src="./assets/certificates/thumbnails/ml.svg" class="folder-img" data-folder="ml">
+                        <img src="./assets/certificates/thumbnails/cybersecurity.svg" class="folder-img" data-folder="cybersecurity">
+                        <img src="./assets/certificates/thumbnails/python.svg" class="folder-img" data-folder="python">
                     </section>
 
-                    <section class="myCV">
+                    <h4>
+                        Take a look at my CV!
+                    </h4>
+                    <section class="button">
                         <a href="./assets/others/logo.svg" target="_blank" rel="noopener noreferrer">My CV</a>
                     </section>
                 </div>
             </section>
-        </main>
 
-        <div id="cert-modal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h2>Machine Learning</h2>
-                <ul class="cert-list">
-                    <li data-cert="./assets/certificates/1.png">Cisco Cibersecurity</li>
-                    <li data-cert="./assets/certificates/2.png">IBM</li>
-                </ul>
+            <div id="modal-ml" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Machine Learning</h2>
+                    <ul class="cert-list">
+                        <li><a href="./assets/certificates/1.png" target="_blank">Artificial Intelligence and Productivity - Santander</a></li>
+                        <li><a href="./assets/certificates/4.png" target="_blank">Machine Learning with Python - IBM</a></li>
+                        <li><a href="./assets/certificates/7.png" target="_blank">Elements of AI - University of Helsinki</a></li>
+                        <li><a href="./assets/certificates/8.png" target="_blank">Responsible Prompting - Santander</a></li>
+                        <li><a href="./assets/certificates/9.png" target="_blank">Introduction to Generative AI - Santander</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
+            
+            <div id="modal-cybersecurity" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Cybersecurity</h2>
+                    <ul class="cert-list">
+                        <li><a href="./assets/certificates/2.png" target="_blank">Introduction to Cybersecurity - Cisco</a></li>
+                        <li><a href="./assets/certificates/6.png" target="_blank">Networking Basics - Cisco</a></li>
+                        <li><a href="./assets/certificates/10.png" target="_blank">Netowrking Devices and Basic Configuration - Cisco</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div id="modal-python" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Python</h2>
+                    <ul class="cert-list">
+                        <li><a href="./assets/certificates/3.png" target="_blank">Python for Data Science - IBM</a></li>
+                        <li><a href="./assets/certificates/6.png" target="_blank">Python (Basic) - HackerRank</a></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
 
         <footer>
             <div class="container">

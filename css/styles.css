@@ -50,6 +50,11 @@ body {
     align-items: center;
 }
 
+.section-content h4 {
+    font-size: larger;
+    margin-bottom: 1.5rem;
+}
+
 .logo {
     display: block;
     transition: transform 0.5s ease;
@@ -57,6 +62,7 @@ body {
 
 #intro .section-content img:hover {
     transform: scale(1.2);
+    cursor: pointer;
 }
 
 .hero-title {
@@ -159,7 +165,7 @@ body {
     transform: scale(1.1);
 }
 
-.myCV > a {
+.button > a {
     display: inline-block;
     text-decoration: none;
     font-weight: 600;
@@ -170,7 +176,7 @@ body {
     transition: transform 0.3s ease;
 }
 
-.myCV > a:hover {
+.button > a:hover {
     transform: scale(1.1);
 }
 
@@ -185,81 +191,111 @@ body {
 
 .folder-img:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .contact {
     transition: transform 0.3s ease;
 }
 
-/* ===== Modal de Certificados ===== */
 .modal {
-    display: none; 
+    display: none;
     position: fixed;
     z-index: 10000;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.85);
-    justify-content: center;
-    align-items: center;
+    overflow-y: auto;
+    backdrop-filter: blur(6px);
     animation: fadeIn 0.3s ease;
 }
 
 .modal-content {
     background: #1a1a1a;
-    color: var(--foreground);
+    margin: 5% auto;
     padding: 2rem;
-    border-radius: 10px;
-    width: 400px;
-    max-width: 90%;
-    text-align: center;
-    position: relative;
-    box-shadow: 0 0 15px rgba(0,255,133,0.6);
+    border-radius: 0.75rem;
+    max-width: 900px;
+    color: var(--foreground);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
     animation: slideUp 0.4s ease;
 }
 
 .close {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 1.5rem;
+    float: right;
+    font-size: 2rem;
+    font-weight: bold;
     cursor: pointer;
     color: var(--accent);
-    transition: transform 0.3s ease;
+    transition: color 0.2s;
 }
 
 .close:hover {
-    transform: scale(1.2);
+    color: var(--foreground);
 }
 
-.cert-list {
-    list-style: none;
-    padding: 0;
-    margin-top: 1rem;
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
 }
 
-.cert-list li {
-    background: rgba(255,255,255,0.05);
-    padding: 0.8rem;
-    margin: 0.5rem 0;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
+.cert-grid img {
+    width: 100%;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
 }
 
-.cert-list li:hover {
-    background: var(--accent);
-    color: var(--background);
+.cert-grid img:hover {
     transform: scale(1.05);
 }
-
-/* Animaciones */
+  
 @keyframes fadeIn {
-    from {opacity: 0;} to {opacity: 1;}
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 @keyframes slideUp {
-    from {transform: translateY(50px); opacity: 0;}
-    to {transform: translateY(0); opacity: 1;}
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.cert-list {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+}
+
+.cert-list li {
+    margin: 0.75rem 0;
+}
+
+.cert-list a {
+    display: block;
+    text-decoration: none;
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 1.05rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.75rem 1rem;
+    border-radius: 0.4rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+.cert-list a:hover {
+    background: rgba(0, 255, 133, 0.1);
+    transform: translateX(5px);
+    color: var(--foreground);
+}
+
+.modal-content h2 {
+    text-align: center;
+}
+
+#python img {
+    height: 50%;
+    width: 50%;
 }
